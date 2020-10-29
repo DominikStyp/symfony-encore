@@ -1,0 +1,30 @@
+{
+  "name": "symfony-encore",
+  "version": "1.0.0",
+  "description": "Sample Symfony/Encore project",
+  "main": "webpack.config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "@symfony/webpack-encore": "^0.31.0",
+    "webpack-notifier": "^1.8.0"
+  },
+  "scripts": {
+    "dev": "encore dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DominikStyp/symfony-encore.git"
+  },
+  "keywords": [
+    "Symfony",
+    "Encore",
+    "Sample",
+    "Project"
+  ],
+  "author": "DominikStyp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DominikStyp/symfony-encore/issues"
+  },
+  "homepage": "https://github.com/DominikStyp/symfony-encore#readme"
+}
