@@ -1,3 +1,4 @@
 # Cache and logs (Symfony2)
 /dist
 /node_modules
+.idea
