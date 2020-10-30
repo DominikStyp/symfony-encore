@@ -1,0 +1,31 @@
+@import "testVars";
+@import "responsiveMixins";
+
+h2::before {
+  @include smartphone {
+    content: "[smartphone]"
+  }
+  @include ipad {
+    content: "[ipad]";
+  }
+  @include desktop {
+    content: "[desktop]"
+  }
+}
+#topMenu {
+  ul {
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 8fr;
+    li {
+      display: flex;
+      border: 1px solid gray;
+      padding:2px;
+      span {
+        width: $v1;
+        font-weight: bold;
+      }
+    }
+  }
+}
