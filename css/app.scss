@@ -1,5 +1,14 @@
 /* assets/styles/app.css */
+/*    // to use Dart Sass in Project, following setting is required
+      .enableSassLoader(options => {
+        options.implementation = require('sass');
+    });
+ */
+@use "privateMixins"; // !!! only with Dart Sass implementation !!!
 @import "topMenu";
+
+
 body {
     background-color: lightgray;
+    @include privateMixins.boldGreen; // !!! only with Dart Sass implementation !!!
 }

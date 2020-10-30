@@ -53,8 +53,14 @@ Encore
         config.corejs = 3;
     })
 
-// enables Sass/SCSS support
-    .enableSassLoader()
+    // enables Sass/SCSS support
+    // this is how we can use Dart Sass with @use directive
+    .enableSassLoader(options => {
+        options.implementation = require('sass');
+    });
+
+    // default node-sass usage
+    //.enableSassLoader()
 
 // uncomment if you use TypeScript
 //.enableTypeScriptLoader()
